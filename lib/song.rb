@@ -47,6 +47,8 @@ artist_hash.each do |name, value|
 count += 1 if name == artist
 end
 end
+artist_hash[name] == count
+
 end
 
 
