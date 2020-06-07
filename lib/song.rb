@@ -38,16 +38,16 @@ end
 
 def self.artist_count
 artist_hash = {}
-count = 0
 self.artists.each do |name|
   artist_hash[name] = 0
 end
 artist_hash.each do |name, value|
+count = 0
 @@artists.each do |artist|
 count += 1 if name == artist
 end
-end
 artist_hash[name] == count
+end
 
 end
 
