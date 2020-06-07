@@ -41,7 +41,7 @@ artist_hash = {}
 self.artists.each do |name|
   artist_hash[name] = 0
 end
-binding.pry
+artist_hash.each do |name, value|
 end
 
 
