@@ -44,7 +44,7 @@ self.artists.each do |name|
 end
 artist_hash.each do |name, value|
 @@artists.each do |artist|
-
+count += 1 if name == artist
 end
 end
 end
