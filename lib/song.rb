@@ -38,15 +38,9 @@ end
 
 def self.artist_count
 artist_hash = {}
-count = 0
-while count < self.artists.length
-times_appeared = 0
-@@artists.each do |name|
-times_appeared += 1 if name == self.artists[count]
-end
-artist_hash[self.artists[count]] = times_appeared
-count += 1
-end
+self.artists.each do |name|
+  artist_hash[name] = 0
+end 
 
 end
 
